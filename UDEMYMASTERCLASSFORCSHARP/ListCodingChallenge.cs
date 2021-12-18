@@ -6,7 +6,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
 {
     public class ListCodingChallenge
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             List<int> solutionList = new List<int>();
             solutionList = Solution();
