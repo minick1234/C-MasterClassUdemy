@@ -6,7 +6,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
 {
     public class DictionaryLesson
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             Employee[] employees =
             {
@@ -73,11 +73,11 @@ namespace UDEMYMASTERCLASSFORCSHARP
             }
 
             Employee resultedEmployee2 = null;
-            if (employeeDirctory.TryGetValue("CEO", out resultedEmployee))
+            if (employeeDirctory.TryGetValue("CEO", out resultedEmployee2))
             {
                 Console.WriteLine(
                     "The employees name is: {0}\nThe employees Role is: {1}\nThe employees age is: {2}\nThe employees rate is: {3}",
-                    resultedEmployee.Name, resultedEmployee.Role, resultedEmployee.Age, resultedEmployee.Rate);
+                    resultedEmployee2.Name, resultedEmployee2.Role, resultedEmployee2.Age, resultedEmployee2.Rate);
             }
             else
             {
