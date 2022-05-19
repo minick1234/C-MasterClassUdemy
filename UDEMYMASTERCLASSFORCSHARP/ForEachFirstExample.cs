@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace UDEMYMASTERCLASSFORCSHARP
+﻿namespace UDEMYMASTERCLASSFORCSHARP
 {
     public class ForEachFirstExample
     {

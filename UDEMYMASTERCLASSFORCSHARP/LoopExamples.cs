@@ -154,7 +154,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //A continue takes the code bit and brings you right back to the top of that loop meaning you can move on to the next iteration!
             //Break ends the loop at the current point. So whenever a break is run into this is where we stop running from.
 
-            for (int i = 0; i < 10; i++)
+            for (var i = 0; i < 10; i++)
             {
                 if (i == 8)
                 {

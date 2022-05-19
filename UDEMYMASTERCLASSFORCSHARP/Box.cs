@@ -5,17 +5,17 @@ namespace UDEMYMASTERCLASSFORCSHARP
     //Example of a getter and setter class being used with a main to display information and set it using the constructor.
     public class Box
     {
+        private int _height;
         private int _length;
         private int _width;
-        private int _height;
 
         public Box(int length, int height, int width)
         {
             try
             {
-                this.Height = height;
-                this.Width = width;
-                this.Length = length;
+                Height = height;
+                Width = width;
+                Length = length;
             }
             catch (ArgumentException e)
             {
@@ -37,38 +37,28 @@ namespace UDEMYMASTERCLASSFORCSHARP
         //Because this is the exact same thing as the setters and getters i made meaning the calls are pointless and i can make the code in here so its shorter and cleaner..
 
         //If i do this without using another variable for the current classes fgrontsurface as a member variable it makes this variable a readonly because it is using the getter only and cannot be set no matter what!!yhnhhjhjuja    QZDWGFXEV CRBTNRVYGHMJYM
-        private int FrontSurface
-        {
-            get
-            {
-                return Height * Length;
-            }
-        }
-        
-        
+        private int FrontSurface => Height * Length;
+
 
         private int Length
         {
-            get { return _length; }
-            set { _length = CheckIfArguementIsValid(value); }
+            get => _length;
+            set => _length = CheckIfArguementIsValid(value);
         }
 
         private int Height
         {
-            get { return _height; }
-            set { _height = CheckIfArguementIsValid(value); }
+            get => _height;
+            set => _height = CheckIfArguementIsValid(value);
         }
 
         private int Width
         {
-            get { return _width; }
-            set { _width = CheckIfArguementIsValid(value); }
+            get => _width;
+            set => _width = CheckIfArguementIsValid(value);
         }
 
-        public int Volume
-        {
-            get { return Length * Width * Height; }
-        }
+        public int Volume => Length * Width * Height;
 
         public int CheckIfArguementIsValid(int arguement)
         {
@@ -83,8 +73,10 @@ namespace UDEMYMASTERCLASSFORCSHARP
         {
             Console.WriteLine("Length is {0} and height is {1} and width {2} so the volume is {3}", Length, Height,
                 Width, Volume);
-            
-            Console.WriteLine("The front surface of the shape based on the length of : {0} and the width of {1} is : {2}" , Length, Height, FrontSurface);
+
+            Console.WriteLine(
+                "The front surface of the shape based on the length of : {0} and the width of {1} is : {2}", Length,
+                Height, FrontSurface);
         }
     }
 

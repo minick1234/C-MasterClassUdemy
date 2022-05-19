@@ -13,9 +13,8 @@ namespace UDEMYMASTERCLASSFORCSHARP
                 new[] {"dominik", "brooke", "alisha"},
                 new[] {"martha", "stewart", "dingle"},
                 new[] {"james", "linus", "sam"}
-                
             };
-            
+
             //Another way to make a new family is tooo add it to the list from an array outside the list -- for example 
             // string[] joeFamily = new string[] {"dick", "bag", "cheese" };
             //
@@ -25,7 +24,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //     joeFamily
             // };
             // this will then now include the array of joe family which is dick bag and cheese meaning if i print thAT then those values will be displayed.
-            
+
             for (var i = 0; i < jaggedFriendsArray.Length; i++)
             for (var j = 0; j < jaggedFriendsArray[i].Length; j++)
                 if (i == 0)

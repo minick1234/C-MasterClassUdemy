@@ -2,9 +2,9 @@
 
 namespace UDEMYMASTERCLASSFORCSHARP
 {
-    class Program
+    internal class Program
     {
-        static void main(string[] args)
+        private static void main(string[] args)
         {
             /**
              * This is a way to make enchanced if statements these are a simplar alternative to if statements to avoid writingh out the whole statement.
@@ -30,8 +30,8 @@ namespace UDEMYMASTERCLASSFORCSHARP
         public static void otherExamples()
         {
             Console.WriteLine("Please enter in the individuals age.");
-            int age = Int32.Parse(Console.ReadLine());
-            string response = age >= 19 ? "old enough" : "not old enough";
+            var age = int.Parse(Console.ReadLine());
+            var response = age >= 19 ? "old enough" : "not old enough";
 
             //The reason i use a  inside squiggly bracket is because that is related to the first variable that way
             //i can avoid making +'s between the strings and just have one with the variable changing the string value.
@@ -40,18 +40,14 @@ namespace UDEMYMASTERCLASSFORCSHARP
 
             //The longer equivalent of that same statement is 
             Console.WriteLine("Please enter in the individuals age:");
-            int age2 = Int32.Parse(Console.ReadLine());
+            var age2 = int.Parse(Console.ReadLine());
 
             string response2;
 
             if (age >= 19)
-            {
                 response2 = "Old enough!";
-            }
             else
-            {
                 response2 = "not old enough!";
-            }
 
             Console.WriteLine("The person is {0} for the bar!", response2);
         }
@@ -59,8 +55,8 @@ namespace UDEMYMASTERCLASSFORCSHARP
         public static void HisChallengeExample()
         {
             Console.WriteLine("Please enter in the tempature in celcius: ");
-            float temp = float.Parse(Console.ReadLine());
-            string stateOfMatter = temp < 0 ? "solid" : (temp >= 100 ? "gas" : "liquid");
+            var temp = float.Parse(Console.ReadLine());
+            var stateOfMatter = temp < 0 ? "solid" : temp >= 100 ? "gas" : "liquid";
             Console.WriteLine("With the temp being {0} degrees celcius, means that the state of matter is {1}", temp,
                 stateOfMatter);
         }
@@ -73,15 +69,15 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //The tryparse returns a bool so i could have another if statement just checking before it reloops! using the enchanced if statement method!
 
             bool NotValidInput;
-            int temp = 0;
-            
+            var temp = 0;
+
             do
             {
                 NotValidInput = false;
                 try
                 {
                     Console.WriteLine("Please enter in the current temp in celcius: ");
-                    temp = Int32.Parse(Console.ReadLine());
+                    temp = int.Parse(Console.ReadLine());
                 }
                 catch (FormatException e)
                 {
@@ -90,9 +86,11 @@ namespace UDEMYMASTERCLASSFORCSHARP
                 }
             } while (NotValidInput);
 
-            string response = temp <= 15
+            var response = temp <= 15
                 ? "It is too cold here!"
-                : (temp >= 16 && temp <= 28 ? "It is ok temp!" : "it is hot here!");
+                : temp >= 16 && temp <= 28
+                    ? "It is ok temp!"
+                    : "it is hot here!";
             Console.WriteLine("The current expression for tempature is: {0}", response);
         }
     }

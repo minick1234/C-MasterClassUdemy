@@ -10,25 +10,24 @@ namespace UDEMYMASTERCLASSFORCSHARP
         {
             Employee[] employees =
             {
-                new Employee("CEO", "Dominik", 21, 100),
-                new Employee("Sale Clerk", "Berg", 23, 21),
-                new Employee("Sale Clerk", "John", 26, 15),
-                new Employee("Sale Clerk", "Derek", 46, 14),
-                new Employee("Manager", "Alex", 8, 18),
-                new Employee("Assistant Manager", "Maya", 8, 25),
-                new Employee("Financial Adivsor", "Aneta", 45, 32)
+                new("CEO", "Dominik", 21, 100),
+                new("Sale Clerk", "Berg", 23, 21),
+                new("Sale Clerk", "John", 26, 15),
+                new("Sale Clerk", "Derek", 46, 14),
+                new("Manager", "Alex", 8, 18),
+                new("Assistant Manager", "Maya", 8, 25),
+                new("Financial Adivsor", "Aneta", 45, 32)
             };
 
 
-            Dictionary<int, string> dic = new Dictionary<int, string>();
+            var dic = new Dictionary<int, string>();
 
-            Dictionary<string, Employee> employeeDirctory = new Dictionary<string, Employee>();
-            int roleCounter = 1;
+            var employeeDirctory = new Dictionary<string, Employee>();
+            var roleCounter = 1;
             foreach (var employee in employees)
-            {
                 if (employeeDirctory.ContainsKey(employee.Role))
                 {
-                    string tempEmployeeRole = employee.Role + "-" + roleCounter;
+                    var tempEmployeeRole = employee.Role + "-" + roleCounter;
                     employeeDirctory.Add(tempEmployeeRole, employee);
                     roleCounter++;
                 }
@@ -36,10 +35,9 @@ namespace UDEMYMASTERCLASSFORCSHARP
                 {
                     employeeDirctory.Add(employee.Role, employee);
                 }
-            }
 
             //to find something in the dictionary we can either loop or we can do something like this 
-            Employee emp1FromDictionary = employeeDirctory["Sale Clerk-1"]; //we can use the keys value to search
+            var emp1FromDictionary = employeeDirctory["Sale Clerk-1"]; //we can use the keys value to search
             foreach (var roles in employeeDirctory)
             {
                 Console.WriteLine(roles.Key); //prints the role name from the dictionary as stored.
@@ -49,11 +47,9 @@ namespace UDEMYMASTERCLASSFORCSHARP
 
             Console.WriteLine(emp1FromDictionary.Name);
             foreach (var curEmployee in employeeDirctory.Values)
-            {
                 Console.WriteLine(
                     "The employees name is: {0}\nThe employees Role is: {1}\nThe employees age is: {2}\nThe employees rate is: {3}",
                     curEmployee.Name, curEmployee.Role, curEmployee.Age, curEmployee.Rate);
-            }
 
             //here is another way to test if a value exists in the dictionary using tryKeyValue -
             //the out in the if statement means send the result out and be able to use it,
@@ -62,27 +58,19 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //This one doesnt work and should show the not found statement and the next example shows it working and printing the correct employee
             Employee resultedEmployee = null;
             if (employeeDirctory.TryGetValue("Intern", out resultedEmployee))
-            {
                 Console.WriteLine(
                     "The employees name is: {0}\nThe employees Role is: {1}\nThe employees age is: {2}\nThe employees rate is: {3}",
                     resultedEmployee.Name, resultedEmployee.Role, resultedEmployee.Age, resultedEmployee.Rate);
-            }
             else
-            {
                 Console.WriteLine("The key does not exist inside of the dictionary list");
-            }
 
             Employee resultedEmployee2 = null;
             if (employeeDirctory.TryGetValue("CEO", out resultedEmployee2))
-            {
                 Console.WriteLine(
                     "The employees name is: {0}\nThe employees Role is: {1}\nThe employees age is: {2}\nThe employees rate is: {3}",
                     resultedEmployee2.Name, resultedEmployee2.Role, resultedEmployee2.Age, resultedEmployee2.Rate);
-            }
             else
-            {
                 Console.WriteLine("The key does not exist inside of the dictionary list");
-            }
 
             //The example below shows how you can use a keyValuepair and check for element at a certain index.
             //using the keyvaluepair with the elementAt we have to implement linq, linq is really good with working with collections efficiently.
@@ -95,12 +83,12 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //Another thing to note is that hashtables start at index 1 of the items list where a dictionary will store it at the 0 index. this can be seen in the cw of the key and i print
             //as for hashtables refer to the hashtable example to see the index of the first item starting at one when trying to print it from the for loop, where
             //if i try to print it from the 0 there is nothing that exists at that location
-            for (int i = 0; i < employeeDirctory.Count; i++)
+            for (var i = 0; i < employeeDirctory.Count; i++)
             {
-                KeyValuePair<string, Employee> keyValuePairOfEmployee = employeeDirctory.ElementAt(i);
+                var keyValuePairOfEmployee = employeeDirctory.ElementAt(i);
                 Console.WriteLine("the cur employee key is: {0}, while i of the for loop is: {1}",
                     keyValuePairOfEmployee.Key, i);
-                Employee tempEmployeeFromKeyValuePair = keyValuePairOfEmployee.Value;
+                var tempEmployeeFromKeyValuePair = keyValuePairOfEmployee.Value;
                 Console.WriteLine(
                     "The employees name is: {0}\nThe employees Role is: {1}\nThe employees age is: {2}\nThe employees rate is: {3}",
                     tempEmployeeFromKeyValuePair.Name, tempEmployeeFromKeyValuePair.Role,
@@ -109,7 +97,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
 
             //Another way to update a employee role without calling the items is to just call the dictionary item using the key or index
             //then create a new employee and set the constructor values with the correct arguements needed.
-            string keyToUpdate = "Manager";
+            var keyToUpdate = "Manager";
             Employee empToUpdate = null;
             if (employeeDirctory.TryGetValue(keyToUpdate, out empToUpdate))
             {
@@ -137,7 +125,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //A way to bypass this is call the keyvalue pair and instead of trying to get the value in the if statement is just delete it based on the object that finds this new role.
             //A key in a dictionary collection in c# cannot be edited or changed. the only way to do that is to remove it from the collection and then add it in using the new key. doign that it will avoid all of these issues, and cause less confusion
             // string keyToRemoveUsingRoleName = "ANewRole";
-            string keyToRemoveUsingRoleName = "Manager";
+            var keyToRemoveUsingRoleName = "Manager";
 
             Employee empToRemove = null;
             if (employeeDirctory.TryGetValue(keyToRemoveUsingRoleName, out empToUpdate))
@@ -153,19 +141,25 @@ namespace UDEMYMASTERCLASSFORCSHARP
             //without usign the collections.value part, it will return a key pair value which means we would have to assign that to a employee object based on the value - example below 
             //commented out. but since i use the .values in the foreach it returns a employee object at the position
             foreach (var newEmployeeList in employeeDirctory.Values)
-            {
                 //this would be used if the employeedirorty.values wasnt used, plus i would have to change the cw to use this employeeobject 
                 //Employee exampleEmployeeValue = newEmployeeList.Value;
                 Console.WriteLine(
                     "The employees name is: {0}\nThe employees Role is: {1}\nThe employees age is: {2}\nThe employees rate is: {3}",
                     newEmployeeList.Name, newEmployeeList.Role,
                     newEmployeeList.Age, newEmployeeList.Rate);
-            }
         }
     }
 
-    class Employee
+    internal class Employee
     {
+        public Employee(string role, string name, int age, float rate)
+        {
+            Role = role;
+            Name = name;
+            Age = age;
+            Rate = rate;
+        }
+
         //Properties like age name and role for each employee. - could also include rate in the consturctor but set it seperate.
         public string Role { get; set; }
         public string Name { get; set; }
@@ -173,17 +167,6 @@ namespace UDEMYMASTERCLASSFORCSHARP
         public float Rate { get; set; }
 
         //Yearly salary = rate/h * number of days * number of weeks * number of months
-        public float Salary
-        {
-            get { return Rate * 8 * 5 * 4 * 12; }
-        }
-
-        public Employee(string role, string name, int age, float rate)
-        {
-            this.Role = role;
-            this.Name = name;
-            this.Age = age;
-            this.Rate = rate;
-        }
+        public float Salary => Rate * 8 * 5 * 4 * 12;
     }
 }

@@ -46,20 +46,13 @@ namespace UDEMYMASTERCLASSFORCSHARP
 
             //The reason we use object inside is because we want to be able to display any time of datatype and if i changed it to string or something else it would only display that in the list.
             //It could also be var instead of object which is relatively the same thing , as var fills itself in depending on the datatype needed. -- usually the most preferable choice.
-            foreach (Object myObject in myArrayList)
-            {
+            foreach (var myObject in myArrayList)
                 if (myObject is int)
-                {
                     //This is a conversion to make sure that the object becomes a double from whatever its interpreted as.
                     sumofAllNumbers += Convert.ToDouble(myObject);
-                }else if(myObject is double)
-                {
+                else if (myObject is double)
                     sumofAllNumbers += Convert.ToDouble(myObject);
-                }else if (myObject is string)
-                {
-                    Console.WriteLine(myObject);
-                }
-            }
+                else if (myObject is string) Console.WriteLine(myObject);
             Console.WriteLine("The sum of all the values in the arraylist together is : {0}", sumofAllNumbers);
         }
     }

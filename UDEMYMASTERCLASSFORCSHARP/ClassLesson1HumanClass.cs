@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace UDEMYMASTERCLASSFORCSHARP
+﻿namespace UDEMYMASTERCLASSFORCSHARP
 {
     //A class is a blueprint representing a object which its components and functionality can be broken down inside.
     //An example is a human, we have many components like body parts and everything which all function inside a huiman but under different systems
@@ -20,7 +18,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
         private EyeColourOfHuman _currentHumansEyeColour = EyeColourOfHuman.Blue;
         private string _firstName = "John";
         private string _lastName = "Doe";
-        
+
         //now adding my first constructor.
         //This is the thing called when we create an object, if we define it with no parameters then it can be created empty
         //Otherwise we must define the arguements that the parameters want when we create the object if we add any parameters.

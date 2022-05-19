@@ -9,13 +9,8 @@ namespace UDEMYMASTERCLASSFORCSHARP
         public int age;
 
         //members - private field
-        private string memberName;
+        private readonly string memberName;
 
-        //memebers - property - exposes jobTitle safely - properties start with a captial letter at all times
-        public string JobTitle { get; set; }
-
-        public int SalaryOfPerson { get; set; } = 20000;
-        
         public MembersExample()
         {
             age = 20;
@@ -24,18 +19,23 @@ namespace UDEMYMASTERCLASSFORCSHARP
             JobTitle = "Game Developer";
             Console.WriteLine("Hi this is a basic object created for the memebers example!");
         }
-        
+
+        //memebers - property - exposes jobTitle safely - properties start with a captial letter at all times
+        public string JobTitle { get; set; }
+
+        public int SalaryOfPerson { get; set; } = 20000;
+
         //For this example he shows how to use something called a destructor. This is something that can only exist once in the class unlike a constructor which can there can be multiple in one class.
         //This is also something called a finilizer, it cannot be inherited, overloaded and it cannot be called either. Its only there for when the members object is done all instructions and out of scope and then this is called as the last and final thing.
         //Another thing is this should not be used unless youre doing cleanup primarily or necessarily have something useful to do, otherwise it uses up alot of unnessacary performance.
         ~MembersExample()
         {
-                //Called for cleaning up statements 
-                //I cannot just use the console because it doesnt write it out, cause this process happens so quick! ~ side note this is better visualized in visual studio as it uses the cmd where here it uses the intelij output.
-                Console.WriteLine("Reconstruction of members object taking place...");
-                Debug.Write("this is the deconstruction of this object taking place...");
+            //Called for cleaning up statements 
+            //I cannot just use the console because it doesnt write it out, cause this process happens so quick! ~ side note this is better visualized in visual studio as it uses the cmd where here it uses the intelij output.
+            Console.WriteLine("Reconstruction of members object taking place...");
+            Debug.Write("this is the deconstruction of this object taking place...");
         }
-        
+
         //Public member method - can be called from other classes when this class is instanced
         public void Introducing(bool isFriend)
         {

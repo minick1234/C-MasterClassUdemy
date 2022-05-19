@@ -22,13 +22,13 @@ namespace UDEMYMASTERCLASSFORCSHARP
             {
                 3, 5, 5, 6, 7, 8, 1, 4, 5, 6
             };
-            
-            
+
+
             //An alternative way to add information into a jagged array compleltly is too do it inside the jagged array - for example
-            int[][] jaggedArray2 = new int[][]
+            int[][] jaggedArray2 =
             {
-                new int[] {56, 45, 43523, 5, 75, 767, 5, 645, 35, 2342, 421, 44, 757, 57, 57, 57575},
-                new int[] {5, 5, 6, 74, 535, 35, 353, 474, 634, 345, 47, 4}
+                new[] {56, 45, 43523, 5, 75, 767, 5, 645, 35, 2342, 421, 44, 757, 57, 57, 57575},
+                new[] {5, 5, 6, 74, 535, 35, 353, 474, 634, 345, 47, 4}
             };
 
             //below now is a example of how to print those arrays values, although the jagged array only has values stored inside of the first index,
