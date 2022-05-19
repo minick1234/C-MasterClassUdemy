@@ -4,7 +4,7 @@ namespace UDEMYMASTERCLASSFORCSHARP
 {
     public class RandomNumAdditionsForMaya
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             Console.WriteLine("Maya pick the math you would like to do:\n1.)Addition\n2.)Subtraction");
             var mathType = int.Parse(Console.ReadLine());

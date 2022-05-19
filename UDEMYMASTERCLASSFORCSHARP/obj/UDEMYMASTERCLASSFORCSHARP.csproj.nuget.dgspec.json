@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj": {}
+    "C:\\Users\\domin\\Desktop\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj": {}
   },
   "projects": {
-    "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj": {
+    "C:\\Users\\domin\\Desktop\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
+        "projectUniqueName": "C:\\Users\\domin\\Desktop\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
         "projectName": "UDEMYMASTERCLASSFORCSHARP",
-        "projectPath": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
+        "projectPath": "C:\\Users\\domin\\Desktop\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
         "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-        "outputPath": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\obj\\",
+        "outputPath": "C:\\Users\\domin\\Desktop\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio Community Shared Items\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
+              "version": "[5.0.12, 5.0.12]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
