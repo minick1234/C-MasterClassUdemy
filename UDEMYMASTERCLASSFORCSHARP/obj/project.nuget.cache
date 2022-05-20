@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KLNix3DHrQeLabz3GvHtxs58DHljp3Bdep+hNcc+b8wH6pIcTQD6XbH4Y5fx6Fmsuw+aAH1cSXo+w0OOFmg2aw==",
+  "dgSpecHash": "UqY/R7/rvvwVNKnYt+C1LIqKDpdij55Nd3m2M8R8tmbtle5vleh7ULbj34WsecWEqOFnH4UcUcu29Fj8bln22Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\domin\\Desktop\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
+  "projectFilePath": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
