@@ -6,7 +6,7 @@ namespace UDEMYMASTERCLASSFORCSHARP.IEnumerableSelfExcercise
 {
     public class IEnumerableAndIEnumaratorSelfExerciseMain
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             PhoneBook MyPhoneBook = new PhoneBook();
             foreach (var contactInPhoneBook in MyPhoneBook)
