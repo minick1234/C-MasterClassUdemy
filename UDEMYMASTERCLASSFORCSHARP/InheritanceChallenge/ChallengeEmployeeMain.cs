@@ -4,7 +4,7 @@ namespace UDEMYMASTERCLASSFORCSHARP.InheritanceChallenge
 {
     public class ChallengeEmployeeMain
     {
-        public static void Main()
+        public static void main()
         {
             Employee emp1 = new Employee("Software Developer", "Maya", 45.50f);
             Boss Boss1 = new Boss("CEO", "Dominik", 100.25f, "Buggati");

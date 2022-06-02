@@ -9,19 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\domin\\.nuget\\packages\\": {},
-    "D:\\Visual Studio Community Shared Items\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
+      "projectUniqueName": "C:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
       "projectName": "UDEMYMASTERCLASSFORCSHARP",
-      "projectPath": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
+      "projectPath": "C:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\UDEMYMASTERCLASSFORCSHARP.csproj",
       "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-      "outputPath": "F:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\obj\\",
+      "outputPath": "C:\\MYWHOLEASSDESKTOP\\C-MasterClassUdemy\\UDEMYMASTERCLASSFORCSHARP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Visual Studio Community Shared Items\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
