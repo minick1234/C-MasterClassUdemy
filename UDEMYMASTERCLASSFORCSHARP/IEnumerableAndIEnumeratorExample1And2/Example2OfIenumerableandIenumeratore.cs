@@ -5,7 +5,7 @@ namespace UDEMYMASTERCLASSFORCSHARP.IEnumerableAndIEnumeratorExample1
 {
     public class Example2OfIenumerableandIenumeratore
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             //create a list of numbers and assign it values. In this case from 1 - 10
             List<int> numbers = new List<int>()
